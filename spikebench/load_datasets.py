@@ -120,6 +120,7 @@ def load_retina(
         download_retina(dataset_path)
 
     retinal_spike_data = retina_dataset(str(dataset_path / 'mode_paper_data'))
+    print(retinal_spike_data)
     group_split = GroupShuffleSplit(
         n_splits=1, test_size=test_size, random_state=random_seed
     )
